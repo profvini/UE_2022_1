@@ -6,4 +6,5 @@ Projeto desenvolvido na Unreal versão 4.27, onde o usuário consegue praticar a
 
 No objeto do jogador, além de ter tirado a arma, foi colocado o arco, foi adicionado um script para recarregar as flechas e foi adicionado mais alguns eventos para posicionar o arco na tela de maneira adequada.  
 
-![Imagem1](Imagens do projeto/Script_primeira pessoa.png?raw=true)
+![Imagem1](Imagensdoprojeto/Script_primeira pessoa.png?raw=true)
+
