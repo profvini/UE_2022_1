@@ -41,3 +41,7 @@ Para as flechas foram criados eventos para que elas possam ser disparadas, além
 ![Imagem13](/11.ArcoeFlecha/Imagensdoprojeto/Script5_Flecha.png?raw=true)
 
 Para a animação foi feita uma bledspace onde foram colocadas duas animações, uma é o arco estático e a outra é o arco com a corda puxada. Depois de finalizada essa parte foi feita uma blueprint para que essas ações fossem executadas.
+
+![Imagem14](/11.ArcoeFlecha/Imagensdoprojeto/Blendspace_Anim.png?raw=true)
+
+![Imagem15](/11.ArcoeFlecha/Imagensdoprojeto/Eventos1_Animar.png?raw=true)
