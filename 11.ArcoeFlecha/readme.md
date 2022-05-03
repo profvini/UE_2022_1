@@ -8,3 +8,4 @@ No objeto do jogador, além de ter tirado a arma, foi colocado o arco, foi adici
 
 ![Imagem1](/11.ArcoeFlecha/Imagensdoprojeto/Script_primeirapessoa.png?raw=true)
 
+Além de acrescentar eventos para posicionar o arco, também há eventos para as ações que o jogador pode fazer que é puxar o arco e atirar.
