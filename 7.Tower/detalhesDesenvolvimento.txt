@@ -1,0 +1,30 @@
+• O processo de desenvolvimento do jogo começou com o básico: um
+sistema de pathfinding funcional onde o inimigo (cápsula genérica)
+possui um "goal", na qual ele procura o caminho mais próximo para
+chegar.
+
+• Com o pathfinding funcionando, começamos a implementar a ideia
+de uma "health" individual para cada goal, e a health de todos os
+goals somadas correspondem ao total de vida da fortaleza.
+
+• Após chegar no goal e destruí-lo, o inimigo procura outro goal para
+destruir, e após destruir todos os goals o jogo acaba.
+
+Técnicas utilizadas no desenvolvimento
+• O player foi feito a partir do template padrão da Unreal, com algumas funcionalidades adicionais
+como o sistema de munições.
+
+• O inimigo é um Character que possui uma instrução em "BeginPlay" que o faz selecionar um goal
+aleatório para perseguir até destruir. Após destruir o goal, vai para o próximo da lista. Além disso
+o inimigo ao colidir com o tiro, leva 20% de dano.
+
+• O inimigo não "spawna" sozinho, então para isso existe o actor EnemySpawner que serve como
+referência de posição para "spawnar" novos inimigos.
+
+• O jogo possui dois Widget Blueprints: um serve para mostrar a interface (munição, rounds, vida) e
+outro para a tela de Game Over.
+
+• O goal é um actor que possui uma caixa de colisão (trigger) e lógica para lidar com o dano.
+
+• Tudo isso é, essencialmente, controlado pelo Game Mode, que define as regras e
+comportamentos do spawn, vida, etc.
