@@ -12,3 +12,8 @@ Além de acrescentar eventos para posicionar o arco, também há eventos para as
 
 ![Imagem2](/11.ArcoeFlecha/Imagensdoprojeto/Eventos1_primeirapessoa.png?raw=true)
 
+![Imagem3](/11.ArcoeFlecha/Imagensdoprojeto/Eventos2_primeirapessoa.png?raw=true)
+
+![Imagem4](/11.ArcoeFlecha/Imagensdoprojeto/Eventos3_primeirapessoa.png?raw=true)
+
+No arco foi adicionado eventos de ações do arco no blueprint, as ações que ele pode fazer é puxar, recarregar e atirar. Para ação de puxar foram colocados eventos divididos em três partes, uma parte para o quando o jogador começa a puxar a corda, outra quando ele para de puxar mas não finaliza a ação e outra pra quando o jogador solta a corda para atirar, isso foi feito por causa da mecânica e animação. 
