@@ -26,5 +26,18 @@ Também foram adicionados eventos que recarregam o arco, nessa parte também foi
 
 ![Imagem7](/11.ArcoeFlecha/Imagensdoprojeto/Eventos3_Arco.png?raw=true)
 
-Para a flecha foram criados eventos para que elas possam ser disparadas, além disso foram criados scripts para os estados da flecha. Esse scripts sobre os estados da flecha foram feitos para que algumas ações não ocorram, como por exemplo que o jogador não atire quando uma flecha esta no ar ainda. Existe scripts para o inicio e fim dos estados, além de outro para definir as ações dos estados da flecha.
+Para as flechas foram criados eventos para que elas possam ser disparadas, além disso foram criados scripts para os estados da flecha. Esse scripts sobre os estados da flecha foram feitos para que algumas ações não ocorram, como por exemplo evitar que o jogador atire quando uma flecha esta no ar ainda. Existe scripts para o inicio e fim dos estados, além de outro para definir as ações dos estados da flecha.
 
+![Imagem8](/11.ArcoeFlecha/Imagensdoprojeto/Eventos1_Flechas.png?raw=true)
+
+![Imagem9](/11.ArcoeFlecha/Imagensdoprojeto/Script1_Flecha.png?raw=true)
+
+![Imagem10](/11.ArcoeFlecha/Imagensdoprojeto/Script2_Flecha.png?raw=true)
+
+![Imagem11](/11.ArcoeFlecha/Imagensdoprojeto/Script3_Flecha.png?raw=true)
+
+![Imagem12](/11.ArcoeFlecha/Imagensdoprojeto/Script4_Flecha.png?raw=true)
+
+![Imagem13](/11.ArcoeFlecha/Imagensdoprojeto/Script5_Flecha.png?raw=true)
+
+Para a animação foi feita uma bledspace onde foram colocadas duas animações, uma é o arco estático e a outra é o arco com a corda puxada. Depois de finalizada essa parte foi feita uma blueprint para que essas ações fossem executadas.
