@@ -12,38 +12,38 @@ Neste exemplo foi usado um arco e flecha, mas facilmente pode ser aplicado em ou
 
 Para utilizar o sistema simplificado de efeitos você deve entrar na pasta de "Feedbacks".
 
-![Imagem4](/ArquivosReadme/Screenshot_1.png?raw=true)
+![Imagem4](/12.EfeitosFeedbacks/ArquivosReadme/Screenshot_1.png?raw=true)
 
 Dentro da pasta de feedbacks você vai achar o actor "feedback".
 
-![Imagem5](/ArquivosReadme/Screenshot_2.png?raw=true)
+![Imagem5](/12.EfeitosFeedbacks/ArquivosReadme/Screenshot_2.png?raw=true)
 
 Você deve torná-lo filho do projétil que deseja os efeitos.
 
-![Imagem6](/ArquivosReadme/Screenshot_3.png?raw=true)
+![Imagem6](/12.EfeitosFeedbacks/ArquivosReadme/Screenshot_3.png?raw=true)
 
 E posicionar na posição desejada, lembrando que tem que ser em um local onde ele possa colidir com outros objetos.
 
-![Imagem7](/ArquivosReadme/Screenshot_4.png?raw=true)
+![Imagem7](/12.EfeitosFeedbacks/ArquivosReadme/Screenshot_4.png?raw=true)
 
 ####Blueprints####
 
 Primeiramente  vai ser feita a inicializado dos inputs e o tipo do efeito padrão, também foi determinado para as teclas "1,2,3 e 4" um tipo de efeito para haver a troca do efeito durante a execução do jogo. essa parte seria apenas para a demonstração dos efeito e como exemplo de aplicação.
 
-![Imagem2](/ArquivosReadme/IncializacaoDosInputsSelecaoDosTipos.png?raw=true)
+![Imagem2](/12.EfeitosFeedbacks/ArquivosReadme/IncializacaoDosInputsSelecaoDosTipos.png?raw=true)
 
 Nesta parte é onde a troca dos feitos está sendo feita, e é aqui onde você pode usar as partículas de sua preferência.
-![Imagem1](/ArquivosReadme/EfeitoNaFlecha.png?raw=true)
+![Imagem1](/12.EfeitosFeedbacks/ArquivosReadme/EfeitoNaFlecha.png?raw=true)
 
 Aqui é quando o projétil colide em algo ele chama o efeito  para mostrar a colisão.
-![Imagem3](/ArquivosReadme/SpawnEfeitoDeColisao.png?raw=true)
+![Imagem3](/12.EfeitosFeedbacks/ArquivosReadme/SpawnEfeitoDeColisao.png?raw=true)
 
 Todo o projeto foi feito para 4 tipos de efeitos diferentes, mas ele pode ser facilmente expansível para muitos mais.
 
 ####Gifs De Demonstração####
 
 Troca de Efeitos
-![Gif1](/ArquivosReadme/Animação23.gif?raw=true)
+![Gif1](/12.EfeitosFeedbacks/ArquivosReadme/Animação23.gif?raw=true)
 
 Disparo e colisão
-![Gif2](/ArquivosReadme/Animação25.gif?raw=true)
+![Gif2](/12.EfeitosFeedbacks/ArquivosReadme/Animação25.gif?raw=true)
