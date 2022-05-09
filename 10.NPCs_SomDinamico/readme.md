@@ -1,8 +1,8 @@
 Projeto Unreal 4 de Johann Alfeu, Emiliano e Gabriel Matusiak
 
-ÁUDIO DINÂMICO:
+# ÁUDIO DINÂMICO:
 
-1 - Som de passos variados para superfícies diferentes
+## 1 - Som de passos variados para superfícies diferentes
 
 Primeiramente, precisamos buscar os efeitos sonoros que pretendemos usar no nosso projeto, você pode pesquisar em sites de efeitos sonoros ou gravar eles você mesmo, lembre-se também de procurar as variações para esses passos, no exemplo em que vamos trabalhar, vamos usar 3 tipos diferentes de passo para 3 materiais diferentes.
 
@@ -101,6 +101,92 @@ Para finalizar, vamos adicionar os efeitos sonoros, puxando cada um de seu devid
 ![image](https://user-images.githubusercontent.com/89028609/167347227-3d98bc56-cb7d-47be-bca4-89fd77d904b1.png)
 
 Neste exemplo usamos apenas 3 tipos diferentes de passos, mas isso pode ser aplicado com muito mais variações. 
+
+
+## 2 - Transição de som ambiente de acordo com o cenário
+
+Neste exemplo, vamos utilizar dois efeitos sonoros diferentes, um para quando o player estiver do lado de fora e outro quando o player estiver dentro da caverna.
+
+![image](https://user-images.githubusercontent.com/89028609/167480705-7dc126d3-3d30-4de6-9517-4ef3d75a82a3.png)
+
+Lembre-se sempre de adicionar seus arquivos no formato WAV para melhor qualidade. 
+
+Depois de adicionar os arquivos, vamos clicar duas vezes em cima de cada um, e checar a opção "Looping" na aba de detalhes.
+
+![image](https://user-images.githubusercontent.com/89028609/167480934-6ccc7f55-3612-4f95-bbc2-1229d8281fff.png)
+
+Isso fará com que o efeito sonoro repita depois de terminar sua duração.
+
+Agora vamos adicionar nossos efeitos sonoros ao mundo.
+
+![image](https://user-images.githubusercontent.com/89028609/167481939-e73f00e4-9b55-4daa-bd44-ad02c3bd1f1c.png)
+
+Para demonstrar melhor, colocamos o áudio da caverna dentro da estrutura da mesma. Após adicionar os efeitos sonoros ao mundo, você percebe que os dois começam a tocar ao mesmo tempo, para arrumar isso, clicamos no objeto de som que queremos que toque apenas dentro da caverna, e na aba de detalhes, procuramos e desabilitamos a opção "Auto Activate". Isso vai impedir que o objeto seja inicializado com o jogo.
+
+![image](https://user-images.githubusercontent.com/89028609/167482283-212530e9-48dc-401f-8762-d15f6404bae2.png)
+
+Com tudo isso feito, vamos agora adicionar um "Box Trigger" dentro dessa estrutura de caverna. para encontrar esse objeto, basta entrar na pasta "Basic" ou pesquisar na barra de procura acima.
+
+Arraste o Box Trigger ao mundo, e encaixe-o na sua geometria.
+
+![image](https://user-images.githubusercontent.com/89028609/167483316-e125c2ca-2b90-4844-807f-6f57e6d99bb1.png)
+
+Agora você deve ter esse trigger verde em volta da sua geometria.
+
+Selecionando o objeto Box Trigger que acabamos de colocar no mundo, vamos seguir para a aba de Blueprints acima e selecionar "Open Level Blueprint".
+
+![image](https://user-images.githubusercontent.com/89028609/167483788-f6bce142-0ecd-498c-a596-218520a4f7d8.png)
+
+Com o Box Trigger selecionado, vamos adicionar um evento de começo para quando o player entrar no range de colisão da caixa clicando com o botão direito do mouse em alguma parte da blueprint, e seguindo esse caminho: 
+
+![image](https://user-images.githubusercontent.com/89028609/167484173-7ebde200-5989-40d7-a71b-897937211376.png)
+
+Agora voltamos ao layout da unreal, e selecionamos o áudio de "WIND", ao voltar à esta aba de blueprint, poderemos clicar com o botão direito, e adicionar esse áudio como referência. 
+
+![image](https://user-images.githubusercontent.com/89028609/167484394-39645582-e7f5-4792-ae22-fa7cb8cda695.png)
+
+Após isso, puxe o node da referência que criamos, e adicione um "Fade Out", e ligue essa função com o evento do Box Trigger. Você pode testar quais valores ficam bons para a sua experiência, mas para o exemplo, vamos deixar o valor de "Fade Out Duration" como 2 segundos.
+
+![image](https://user-images.githubusercontent.com/89028609/167484858-79c0a0f8-fd2d-4526-9241-e3cf0a95e79c.png)
+
+Agora vamos selecionar o objeto de som "CAVE" dentro da caverna, voltar ao blueprint e seguir os mesmos passos, mas ao invés de adicionar um "Fade Out", será adicionado um "Fade In". 
+
+![image](https://user-images.githubusercontent.com/89028609/167485076-d984fa78-97a5-4d77-8408-9c3bfacc786f.png)
+
+Esse esquema de blueprint vai fazer com que ao entrar nessa caixa de colisão, o som atual terá seu volume zerado, e outro som irá tomar conta do cenário, no caso, o som de vento será trocado por um som ambiente de caverna. 
+
+Para fazer com que o som de vento volte após o player sair da caverna, basta selecionar novamente o Box Trigger no mundo, e chamar um "End Overlap" ao invés do Begin Overlap que usamos antes.
+
+![image](https://user-images.githubusercontent.com/89028609/167485740-7547b990-4d71-4c8f-afda-0cf9e9003963.png)
+
+Agora podemos copiar e colar as funções do esquema de cima, porém vamos trocar de lugar os sons, para que assim, o som de caverna seja trocado pelo som de vento.
+
+![image](https://user-images.githubusercontent.com/89028609/167486003-51ad405a-3e7b-4ea7-93d0-3b74d50bd602.png)
+
+## BÔNUS - Adicionar efeito de eco dentro da caverna
+
+A maneira de adicionar algum efeito sonoro à sua caixa de colisão, é bem simples. Primeiro, vamos na nossa pasta de efeitos sonoros, e vamos criar um "Reverb Effet"
+
+![image](https://user-images.githubusercontent.com/89028609/167488398-0166c897-500f-495a-b0e5-a1e6857165d5.png)
+
+Após isso, vamos adicionar um "Audio Volume" no mundo. Pode ser um pouco complicado de ver, mas vamos coloca-lo no mesmo lugar da Box Trigger.
+
+![image](https://user-images.githubusercontent.com/89028609/167489247-738df451-27d3-4d45-9df5-03cb0fcf6aec.png)
+
+Dentro dos detalhes do Audio Volume, na aba "Reverb" vamos adicionar o Reverb que criamos na nosssa pasta de efeitos sonoros.
+
+![image](https://user-images.githubusercontent.com/89028609/167489536-86739e99-e08c-411a-9b5a-8f767ffcfa97.png)
+
+Agora você pode brincar com os valores do Reverb e deixa-los como você preferir.
+
+
+
+
+
+
+
+
+
 
 
 
