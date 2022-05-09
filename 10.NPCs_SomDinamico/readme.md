@@ -180,6 +180,10 @@ Dentro dos detalhes do Audio Volume, na aba "Reverb" vamos adicionar o Reverb qu
 Agora você pode brincar com os valores do Reverb e deixa-los como você preferir.
 
 
+## Link para música do boss: https://youtu.be/trl_KFT3uLs
+
+
+
 
 
 
