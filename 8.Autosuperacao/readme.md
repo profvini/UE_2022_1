@@ -1,3 +1,5 @@
+Grupo: Ana Anzolin, Bruna Diehl e Thiago Eguilhor.
+
 Link do Drive com o arquivo dos modelos 3D modelados, vídeo gravado na Unreal 5.0 mostrando os arquivos e a gameplay, o PowerPoint da apresentação, o arquivo .uproject com o jogo recriado na Unreal 4.27 e o executável do jogo.
 https://drive.google.com/drive/folders/1lJcAfDR691z4EAM3HJvZzIwW5dscnxL4?usp=sharing
 
