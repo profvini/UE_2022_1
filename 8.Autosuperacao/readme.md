@@ -11,7 +11,7 @@ Para trás -> Seta para baixo e escala -1,0
 Lados:
 Direita -> Seta da direita e escala +1,0
 Esquerda -> Seta da esquerda e escala -1,0
-Cãmera e mouse:
+Câmera e mouse:
 LookUp
 Mouse Y e escala -1,0
 Turn
